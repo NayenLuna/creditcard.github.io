@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+   <br>
+   <br>
+   <br>
+    <header><h1>Valida tu tarjeta aquí</h1></header>
+    <br>
+    <br>
+    
+    <img src="/img/card.jpg" class="card" alt="tarjeta">
+ <body>
+    <form class="container" action="/login.php" id="formulario"> 
+     <ul>
+      <label for="nombre">Nombre Completo:</label>  
+      <input type="text" name="nombre" id="nombre">
+    </ul>
+      <p>
+        <ul>
+     <label for="numerodetarjeta"> Ingresa tu número de tarjeta:</label>
+    <input type="text" required name="card" pattern="[0-9]+" id="numeroDeTarjeta" maxlength="13"/>
+        </ul>    
+     <br>
+     <ul>
+    <label class="date" for="mes"> Fecha de Vencimiento:</label>
+    <input type="text" id="mes" name="date" placeholder="Mes" max lenght="2" pattern="[0-9]+"/>
+    <input type="text" id="expYear" name="date" placeholder="Año" maxlength="4" pattern="[0-9]+"/>
+
+    <br></ul>
+      <ul><label for="cvv">CVV:</label>
+      <input type="text" required id="cvv" max length="3" placeholder="cvv">
+      </ul>
+      <br>
+      <br>
+   <button value="isValid" id="validation-message">Validar</button> 
+  </p></form>
+
+  
+    
+    <footer></footer>
+    <script src="index.js" type="module"> </script>
+    
+
+  </body>
+</html>
